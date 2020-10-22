@@ -1,0 +1,309 @@
+
+    :root{ --main-blue: #37b2d1}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+ }
+a{text-decoration: none;}
+
+
+
+  .slideshow-container {
+    width: 100%;
+    height: 38rem;
+    margin: 0;
+    padding: 0;
+  }
+  .slideimg{
+
+    width: 100%;
+    height: 38rem;
+    object-fit: contain;
+    
+      }
+  
+  .mySlides {
+    display: none;
+
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+ 
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+ 
+ .nav{
+     width: 100%;
+     background-color: #eeeaea;
+     width: 100%;
+     height: 3rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-left: 10%;
+     padding-right: 10%;
+     margin: 0;
+     font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+
+ 
+  .nav ul {
+    display: flex;
+    flex-grow: 6;
+  }
+  
+  li {
+    list-style: none;
+  }
+  .nav-bar li {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+.nav-links:hover {color: #000000;
+  background-image: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  transition: width 0.3s, ease-in-out;
+  height: 100%;
+  }
+
+
+
+
+  .logoshop {
+    color: var(--main-blue);
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: bold;
+    font-size: large;
+  }
+ @media only screen and (max-width: 450px) {
+    .prevBtn,
+    .nextBtn,
+    .Caption {
+       font-size: 16px;
+    }
+ }
+ .categories {
+    width: 100%;
+    height: 32rem;
+    background-color: #ffffff;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  
+  h2 {
+    text-align: center;
+    padding-top: 3%;
+    padding-right: 10%;
+    padding-left: 10%;
+    font-family: 'Philosopher', sans-serif;
+  }
+  
+  .wrapper {
+    padding-top: 3%;
+  
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+  }
+  
+  .cosmeticambl {
+    background-image: url(./images/ambalaza1.jpg);
+    width: 20rem;
+    height: 20rem;
+    background-position: center;
+    display: flex;
+    background-repeat: no-repeat;
+  
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+  .cosmetic {
+    width: 70%;
+    background-color: var(--main-blue);
+    color: #ffffff;
+    height: 3rem;
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+    align-content: center;
+  }
+  
+  .shop {
+    width: 30%;
+    background-color: #e2d9d9;
+    height: 3rem;
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+    align-content: center;
+  }
+  .chemicalambl {
+    background-image: url(./images/ambalaza2.jpg);
+    width: 20rem;
+    height: 20rem;
+    background-size: cover;
+    display: flex;
+    font-family: 'Philosopher', sans-serif;
+    align-items: flex-end;
+    align-content: center;
+    text-align: center;
+  }
+  .chemical{
+    width: 70%;
+    background-color: var(--main-blue);
+    color: #ffffff;
+    height: 3rem;
+    font-family: 'Philosopher', sans-serif;
+  }
+  
+.line {
+    width: 40%;
+    height: 2px;
+    margin-top: 3rem;
+  }
+  
+  .linewrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .products {
+    width: 100%;
+    height: 32rem;
+    background-color: var(--main-blue);
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .products h2 {
+    color: #ffffff;
+  }
+  #productwrapper {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5%;
+  }
+  #productwrapper img{
+    
+    transition: transform 1s ease;
+
+  }
+  #productwrapper:hover img{     
+    
+transform: scale(0.5) rotate(360deg);
+  }
+
+  #productwrapper p{
+    text-align: center;
+    font-weight: bold;
+    color: royalblue;
+  }
+  .showimg{
+      width: 15rem;
+      height: 20rem;
+      padding: 0;
+      margin: 0;
+      object-fit: contain;
+  }
+  
+  
+  
+  .contact {
+    width: 100%;
+    height: 32rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #ffffff;
+  }
+  
+  .contact h2 {
+    color: #000000;
+    font-family: 'Philosopher', sans-serif;
+  
+  }
+  
+  .contactwrapper {
+    padding-top: 5%;
+    display: flex;
+    width: 100%;
+  
+    justify-content: space-between;
+  }
+  .container,
+.container-products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;;
+}
+
+.contact{
+  width: 100%;
+  height: auto;
+  font-weight: bold;
+  justify-content: right;
+}
